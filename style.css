@@ -1,15 +1,24 @@
 body {
   background-color: #1f2937;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+.body {
+  flex: 1;
+}
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 32px;
-  color: white;
+  margin-left:  32px;
+  margin-right: 32px;
+  height: 80px;
+  color: #F9FAF8;
 }
 
 .logo {
@@ -29,8 +38,8 @@ body {
    align-items: center;
    justify-content: space-evenly;
    padding: 10px;
-   margin-left: 50px;
-   margin-right: 20px;
+   margin-left: 32px;
+   margin-right: 32px;
 }
 
 .hero-main {
@@ -60,4 +69,80 @@ body {
 
 .heroimg {
     padding: 30px;
+    min-width: 50%;
+    height: auto;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.midbanner {
+  background-color: white;
+}
+
+.midbanner-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #1f2937
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 50px;
+  border: none;
+  border-radius: 8px;
+}
+
+.cardlabels {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 60px;
+}
+
+.cardlabels li {
+  max-width: 140px;
+  text-align: center;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:400px;
+  background-color: lightgray;
+}
+
+.quote-main {
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 36px;
+  color: #1f2937;
+}
+
+.quote-sub {
+  text-align: end;
+  font-size: 25px;
+  margin-right: 200px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  color: #E5E7EB;
+}
+
+img {
+  border-radius: 8px;
+  height: 150px;
+  width: auto;
 }
