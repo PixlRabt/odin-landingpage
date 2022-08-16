@@ -1,16 +1,63 @@
 body {
-    background-color: navy;
+  background-color: #1f2937;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
+
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 32px;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bolder;
 }
 
 .header-links {
-    display: flex;
-    list-style: none;
-    gap: 16px;
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+  gap: 30px;
+}
+
+.content {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   padding: 10px;
+   margin-left: 50px;
+   margin-right: 20px;
+}
+
+.hero-main {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.hero-sub {
+    font-size: 18px;
+    color: #E5E7EB;
+    padding-bottom: 20px;
+}
+
+.signup {
+    background-color: #3882F6;
+  border: none;
+  border-radius: 8px;
+  color: #E5E7EB;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.heroimg {
+    padding: 30px;
 }
