@@ -7,6 +7,19 @@ body {
   flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+  color: #E5E7EB
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 .body {
   flex: 1;
 }
@@ -77,6 +90,9 @@ body {
 
 .midbanner {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .midbanner-main {
@@ -95,21 +111,15 @@ body {
   justify-content: center;
   list-style: none;
   gap: 50px;
-  border: none;
   border-radius: 8px;
+  width: min-content;
 }
 
-.cardlabels {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  gap: 60px;
-}
-
-.cardlabels li {
-  max-width: 140px;
-  text-align: center;
+.cards img {
+  border: 5px solid #3882F6;
+  border-radius: 8px;
+  height: 150px;
+  width: auto;
 }
 
 .quote {
@@ -137,12 +147,47 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: 20px;
   color: #E5E7EB;
 }
 
-img {
+.action {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-main {
+  color: #E5E7EB;
+  font-size: 24px;
+}
+
+.action-sub {
+  font-size: 18px;
+}
+
+.box {
+  background:#3882F6;
+  display: flex;
+  padding: 10%;
+  border: none;
   border-radius: 8px;
-  height: 150px;
-  width: auto;
+  gap: 30px;
+  width: 100%;
+  flex-grow: inherit;
+}
+
+.signup2 {
+  background-color: #3882F6;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: #E5E7EB;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
 }
